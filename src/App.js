@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
+  function handleNameChange(){
+    const name = ['learn','grow','give'];
+    const int = Math.floor(Math.random()*3);
+    return name[int];
+
+  }
+  const name = 'shankara narayanan'
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>Learn React
+      <p>lets {handleNameChange()} money</p>
     </div>
+    
   );
 }
 
